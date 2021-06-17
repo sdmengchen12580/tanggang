@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.edusoho.kuozhi.clean.widget.ESIconView
+            android:id="@+id/tv_icon_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_item_detail_title"
+            android:layout_alignTop="@+id/tv_item_detail_title"
+            android:gravity="center"
+            android:text="@string/new_font_status_finish"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/font_s" />
+
+        <TextView
+            android:id="@+id/tv_item_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_icon_status"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/primary_font_color"
+            android:textSize="@dimen/font_s"
+            tools:text="考试" />
+
+        <TextView
+            android:id="@+id/tv_item_detail_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/assignment_exam_blue"
+            android:textSize="@dimen/font_xs"
+            tools:text="继续学习" />
+
+        <RelativeLayout
+            android:id="@+id/rl_item_detail_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_item_detail_title"
+            android:layout_below="@+id/tv_item_detail_title"
+            android:layout_marginTop="15dp">
+
+            <com.edusoho.kuozhi.clean.widget.ESIconView
+                android:id="@+id/tv_item_detail_time_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/new_font_item_time"
+                android:textColor="@color/default_grey_text_color"
+                android:textSize="@dimen/font_xs" />
+
+            <TextView
+                android:id="@+id/tv_item_detail_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_item_detail_time_icon"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/default_grey_text_color"
+                android:textSize="@dimen/font_xs"
+                tools:text="03-02 14:00-16:00" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_item_detail_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rl_item_detail_time"
+            android:layout_below="@+id/rl_item_detail_time"
+            android:layout_marginTop="10dp">
+
+            <com.edusoho.kuozhi.clean.widget.ESIconView
+                android:id="@+id/tv_item_detail_location_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/new_font_item_location"
+                android:textColor="@color/default_grey_text_color"
+                android:textSize="@dimen/font_xs" />
+
+            <TextView
+                android:id="@+id/tv_item_detail_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_item_detail_location_icon"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/default_grey_text_color"
+                android:textSize="@dimen/font_xs"
+                tools:text="杭州市滨江区源越大厦301会议室" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_item_detail_homework"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rl_item_detail_location"
+            android:layout_below="@+id/rl_item_detail_location"
+            android:layout_marginTop="10dp">
+
+            <com.edusoho.kuozhi.clean.widget.ESIconView
+                android:id="@+id/tv_item_detail_homework_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/new_font_item_homework"
+                android:textColor="@color/default_grey_text_color"
+                android:textSize="@dimen/font_xs" />
+
+            <TextView
+                android:id="@+id/tv_item_detail_homework"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_item_detail_homework_icon"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/default_grey_text_color"
+                android:textSize="@dimen/font_xs"
+                tools:text="含课后作业" />
+
+            <TextView
+                android:id="@+id/tv_item_detail_homework_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="查看详情"
+                android:textColor="@color/assignment_exam_blue"
+                android:textSize="@dimen/font_xs" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

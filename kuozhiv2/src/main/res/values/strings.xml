@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">唐港课堂</string>
+
+    <string name="app_host"></string>
+    <string name="app_code">edusoho-training</string>
+</resources>

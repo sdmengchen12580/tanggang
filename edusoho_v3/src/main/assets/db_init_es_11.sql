@@ -1,0 +1,1 @@
+ALTER TABLE school_nofity ADD COLUMN ownerId INTEGER;

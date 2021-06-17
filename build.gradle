@@ -1,0 +1,40 @@
+buildscript {
+    repositories {
+        google()
+        mavenLocal()
+        jcenter()
+//        maven{ url'http://maven.aliyun.com/nexus/content/groups/public/' }
+//        maven{ url'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
+        maven {
+            credentials {
+                username 'admin'
+                password 'kaifazhe'
+            }
+            url "http://maven.edusoho.cn:8081/nexus/content/repositories/releases/"
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.1'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenLocal()
+        jcenter()
+//        maven{ url'http://maven.aliyun.com/nexus/content/groups/public/' }
+//        maven{ url'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
+        maven {
+            credentials {
+                username 'admin'
+                password 'kaifazhe'
+            }
+            url "http://maven.edusoho.cn:8081/nexus/content/repositories/snapshots/"
+        }
+        maven { url "$rootDir/../../react-native/node_modules/react-native/android" }
+        maven {
+            url 'https://oss.sonatype.org/content/repositories/snapshots'
+        }
+    }
+}

@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/question_analysis_bg">
+
+    <com.edusoho.kuozhi.v3.view.EduSohoTextBtn
+        android:id="@+id/question_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:padding="9dp"
+        app:fontColor="@color/base_black_normal"
+        app:iconSizeScale="2.4"
+        app:image="@string/font_favorite"
+        app:size="12dp" />
+
+    <TextView
+        android:id="@+id/question_my_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/question_favorite"
+        android:padding="9dp"
+        android:text="你的答案:" />
+
+    <TextView
+        android:id="@+id/question_right_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_my_answer"
+        android:layout_toLeftOf="@id/question_favorite"
+        android:padding="9dp"
+        android:text="正确答案：" />
+
+    <TextView
+        android:id="@+id/question_read_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_right_answer"
+        android:layout_margin="9dp"
+        android:background="@drawable/card_bg"
+        android:padding="6dp"
+        android:text="@string/teacher_is_reading"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layout_question_analysis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_read_label"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/question_analysis_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/question_analysis_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="9dp"
+            android:text="解析："
+            android:textColor="@color/testpaper_result_analysis" />
+
+        <TextView
+            android:id="@+id/question_analysis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="9dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_question_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_question_analysis"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/question_analysis_bg"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/question_analysis_comments_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="9dp"
+            android:text="@string/teacher_comment"
+            android:textColor="@color/testpaper_result_analysis" />
+
+        <TextView
+            android:id="@+id/question_analysis_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="9dp" />
+    </LinearLayout>
+
+</RelativeLayout>

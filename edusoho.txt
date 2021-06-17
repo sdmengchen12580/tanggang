@@ -1,0 +1,30 @@
+//打包密钥
+keyAlias 'edusoho'
+keyPassword 'edusoho'
+storeFile file('C:/Users/xp/AndroidStudioProjects/dxywb_keys/edusoho.jks')
+storePassword 'edusoho'
+
+MTA
+掌大部门
+qq:702315243
+密码：trewq123!@#
+邮箱：zhangdadept@qq.com
+联系人：徐鹏
+手机：15850581507
+
+应用名：HX学习平台
+
+
+友盟
+掌大部门
+zhangdadept@qq.com
+trewq123!@#
+联系人：徐鹏
+手机：15850581507
+
+应用名：HX学习平台
+
+Mob
+掌大部门
+zhangdadept@qq.com
+trewq123!@#

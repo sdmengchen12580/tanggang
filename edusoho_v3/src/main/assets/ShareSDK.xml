@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+    <Wechat AppId="wxe1a72ae0bdbdaafe" AppSecret="481d478357b751a04d50c758ad8a0ae4"
+        BypassApproval="false"
+        Enable="true"
+        Id="1"
+        SortId="1" />
+
+    <WechatMoments AppId="wxe1a72ae0bdbdaafe" AppSecret="481d478357b751a04d50c758ad8a0ae4"
+        BypassApproval="true"
+        Enable="true"
+        Id="2"
+        SortId="2" />
+
+    <WechatFavorite AppId="wxe1a72ae0bdbdaafe" AppSecret="481d478357b751a04d50c758ad8a0ae4"
+        Enable="false"
+        Id="3"
+        SortId="3" />
+
+    <SinaWeibo
+        AppKey="3283517414"
+        AppSecret="b9500cb3ff5274769b2d4dd8fc878b81"
+        Enable="true"
+        Id="3"
+        IsNewApi="true"
+        RedirectUrl="http://demo.edusoho.com/mobile/"
+        ShareByAppClient="true"
+        SortId="3" />
+
+    <QZone AppId="1103424113"
+        AppKey="ZSJdqYxH7kSD6iuT"
+        Enable="true"
+        Id="4"
+        ShareByAppClient="true"
+        SortId="4" />
+
+    <!-- ShareByAppClient标识是否使用微博客户端分享，默认是false -->
+    <QQ AppId="1103424113" AppKey="ZSJdqYxH7kSD6iuT"
+        Enable="true"
+        Id="5"
+        ShareByAppClient="true"
+        SortId="5" />
+</DevInfor>

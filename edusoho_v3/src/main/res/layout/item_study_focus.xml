@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_item_focus_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_focus_top_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_xxs"
+            android:textColor="@color/assignment_exam_red"
+            android:background="@color/assignment_exam_red_opacity"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_marginRight="5dp"
+            tools:text="课程" />
+
+        <TextView
+            android:id="@+id/tv_focus_top_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/font_xs"
+            android:textColor="@color/primary_font_color"
+            tools:text="01-01 新概念 CG 创作项目在线直播课程讲"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item_focus_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_focus_bottom_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_xxs"
+            android:textColor="@color/assignment_exam_red"
+            android:background="@color/assignment_exam_red_opacity"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_marginRight="5dp"
+            tools:text="课程" />
+
+        <TextView
+            android:id="@+id/tv_focus_bottom_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/font_xs"
+            android:textColor="@color/primary_font_color"
+            tools:text="01-01 新概念 CG 创作项目在线直播课程讲"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

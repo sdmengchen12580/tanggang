@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/primary"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.edusoho.kuozhi.clean.widget.ESIconView
+                android:id="@+id/iv_back"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/new_font_back"
+                android:textColor="@color/disabled2_hint_color"
+                android:textSize="@dimen/font_l" />
+
+            <TextView
+                android:id="@+id/tv_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="@string/project_plan_record"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_xl"
+                tools:text="@string/project_plan_record" />
+
+            <TextView
+                android:id="@+id/tv_item_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp"
+                android:text="@string/project_plan_record"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_l"
+                tools:text="11/22" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+    <!--android:id="@+id/srl_content"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/transparent"-->
+    <!--android:padding="8dp">-->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/rv_content"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@android:color/transparent" />-->
+
+    <!--<include-->
+    <!--layout="@layout/view_empty"-->
+    <!--android:visibility="gone" />-->
+    <!--</FrameLayout>-->
+
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.edusoho.kuozhi.clean.widget.ESRecyclerView.ESPullAndLoadRecyclerView
+            android:id="@+id/rv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent" />
+
+        <include
+            layout="@layout/view_empty"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

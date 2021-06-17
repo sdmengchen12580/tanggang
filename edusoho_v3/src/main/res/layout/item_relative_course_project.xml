@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/disabled2_hint_color"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    app:contentPaddingBottom="15dp"
+    app:contentPaddingLeft="20dp"
+    app:contentPaddingRight="20dp"
+    app:contentPaddingTop="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_course_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_font_color"
+            android:textSize="@dimen/font_xl" />
+
+        <RelativeLayout
+            android:id="@+id/price_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp">
+
+            <TextView
+                android:id="@+id/tv_sale_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="sale"
+                android:textColor="@color/secondary_color"
+                android:textSize="@dimen/font_xl" />
+
+            <TextView
+                android:id="@+id/tv_original_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/tv_sale_price"
+                android:textColor="@color/secondary_font_color"
+                android:text="123213213"
+                android:textSize="@dimen/font_l" />
+
+            <TextView
+                android:id="@+id/tv_sale_word"
+                android:layout_width="22dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_original_price"
+                android:background="@color/secondary_color"
+                android:gravity="center"
+                android:text="@string/sale_word"
+                android:textColor="@color/disabled2_hint_color"
+                android:textSize="@dimen/font_xxs"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_course_tasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/secondary_font_color"
+            android:textSize="@dimen/font_s" />
+
+        <LinearLayout
+            android:id="@+id/ll_promise_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/promise_services"
+                android:textColor="@color/secondary_font_color"
+                android:textSize="@dimen/font_s" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_vip_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/primary_color"
+            android:textSize="@dimen/font_s" />
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

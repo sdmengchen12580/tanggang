@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/disabled2_hint_color">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/primary"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.edusoho.kuozhi.clean.widget.ESIconView
+                android:id="@+id/iv_back"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/new_font_back"
+                android:textColor="@color/disabled2_hint_color"
+                android:textSize="@dimen/font_l" />
+
+            <TextView
+                android:id="@+id/tv_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="@string/question_management"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_xl"
+                tools:text="@string/question_management" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/v_breakline"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tb_toolbar"
+        android:background="@color/disabled_hint_color" />
+
+    <LinearLayout
+        android:id="@+id/llayout_filter_question_type_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v_breakline"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/rlayout_filter_type"
+            android:background="@color/disabled1_hint_color">
+
+            <TextView
+                android:id="@+id/tv_question_post"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/disabled1_hint_color"
+                android:gravity="center"
+                android:text="@string/question_post"
+                android:textColor="@color/primary_color"
+                android:textSize="@dimen/font_l" />
+
+            <TextView
+                android:id="@+id/tv_question_answer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/disabled1_hint_color"
+                android:gravity="center"
+                android:text="@string/question_answer"
+                android:textColor="@color/primary_font_color"
+                android:textSize="@dimen/font_l" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_breakline1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/llayout_filter_question_type_list"
+        android:background="@color/disabled_hint_color" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/v_breakline1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

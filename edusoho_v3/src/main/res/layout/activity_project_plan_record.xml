@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/primary"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.edusoho.kuozhi.clean.widget.ESIconView
+                android:id="@+id/iv_back"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/new_font_back"
+                android:textColor="@color/disabled2_hint_color"
+                android:textSize="@dimen/font_l" />
+
+            <TextView
+                android:id="@+id/tv_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="@string/project_plan_record"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_xl"
+                tools:text="@string/project_plan_record" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.edusoho.kuozhi.clean.widget.ESProjectPlanRecordItem
+        android:id="@+id/esppri_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        app:icon="@drawable/icon_project_plan_record_item"
+        app:title="@string/project_plan_record_item_project_item" />
+
+    <com.edusoho.kuozhi.clean.widget.ESProjectPlanRecordItem
+        android:id="@+id/esppri_learn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        app:icon="@drawable/icon_project_plan_record_learn"
+        app:title="@string/project_plan_record_item_post_learn" />
+
+    <com.edusoho.kuozhi.clean.widget.ESProjectPlanRecordItem
+        android:id="@+id/esppri_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        app:icon="@drawable/icon_project_plan_record_test"
+        app:title="@string/project_plan_record_item_special_test" />
+
+    <com.edusoho.kuozhi.clean.widget.ESProjectPlanRecordItem
+        android:id="@+id/esppri_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        app:icon="@drawable/icon_project_plan_record_activity"
+        app:title="@string/project_plan_record_item_activity" />
+
+
+</LinearLayout>

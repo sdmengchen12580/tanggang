@@ -1,0 +1,12 @@
+org.opencv
+attr camera_id
+attr show_fps
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
+id any
+id back
+id front
+string app_name
+style AppTheme
+styleable CameraBridgeViewBase camera_id show_fps

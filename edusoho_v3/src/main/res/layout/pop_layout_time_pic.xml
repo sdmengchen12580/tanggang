@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_tran"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/sharell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_auth_camera_pop"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="17dp"
+                android:gravity="center"
+                android:text="@string/str_select_time"
+                android:textColor="@color/color_161616"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/img_cancel"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:padding="8dp"
+                android:src="@drawable/img_graw_x" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_eeeeee" />
+
+        <top.defaults.view.DateTimePickerView
+            android:id="@+id/datePickerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:curved="true"
+            app:minutesInterval="fifteen"
+            app:preferredMaxOffsetItemCount="3"
+            app:textSize="18dp"
+            app:type="dateTime" />
+
+        <TextView
+            android:id="@+id/tv_take_pic"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="21.5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="21.5dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/shape_4_conrner_solid_0292fd"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:contentInsetStart="0dp"
+        android:background="@color/primary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.edusoho.kuozhi.clean.widget.ESIconView
+                android:id="@+id/iv_back"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/new_font_back"
+                android:textColor="@color/disabled2_hint_color"
+                android:textSize="@dimen/font_l" />
+
+            <TextView
+                android:id="@+id/tv_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:text="@string/survey_detail"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_xl" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.edusoho.kuozhi.clean.widget.ESRecyclerView.ESPullAndLoadRecyclerView
+        android:id="@+id/rv_survey_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tb_toolbar"
+        android:layout_above="@+id/btn_submit_survey">
+
+    </com.edusoho.kuozhi.clean.widget.ESRecyclerView.ESPullAndLoadRecyclerView>
+    
+    
+    <Button
+        android:id="@+id/btn_submit_survey"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/primary"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_l"
+        android:text="提交问卷"
+        android:layout_height="50dp" />
+
+</RelativeLayout>

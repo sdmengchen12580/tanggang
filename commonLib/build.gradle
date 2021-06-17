@@ -1,0 +1,23 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 27
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+}
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    /**沉浸式*/
+    implementation('com.jaeger.statusbarutil:library:1.5.1') {
+        exclude group: 'com.android.support', module: 'support-v4'
+    }
+}

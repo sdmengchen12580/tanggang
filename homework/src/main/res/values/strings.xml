@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">homework</string>
+    <string name="hw_card_submit">确认提交</string>
+    <string name="exercise_label">练习</string>
+    <string name="homework_label">作业</string>
+    <string name="homework_analysis">解析：</string>
+    <string name="teacher_comment">老师评语:</string>
+    <string name="right_answer">正确答案:</string>
+
+</resources>

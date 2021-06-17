@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/disabled0_hint_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llayout_find_card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/find_card_item_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="94dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/card_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_course"
+                app:riv_corner_radius_top_left="4dp"
+                app:riv_corner_radius_top_right="4dp" />
+
+            <TextView
+                android:id="@+id/tv_discount"
+                android:layout_width="22dp"
+                android:layout_height="16dp"
+                android:background="@drawable/find_card_discount"
+                android:gravity="center"
+                android:text="折"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_xxs"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_activity_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_xxs"
+                android:layout_margin="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                tools:text="1234"
+                android:background="@drawable/shape_activity_category_blue"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_activity_stu_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_xxs"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                tools:text="12/20"
+                android:background="@drawable/shape_activity_category_grey"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/card_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="14dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/secondary_font_color"
+            android:textSize="@dimen/font_m" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/card_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="0"
+                android:textColor="@color/secondary2_font_color"
+                android:textSize="@dimen/font_xxs" />
+
+            <TextView
+                android:id="@+id/card_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="免费"
+                android:textColor="@color/primary_color"
+                android:textSize="@dimen/font_xxs" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

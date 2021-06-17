@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_project_plan_record_item_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:scaleType="fitCenter"
+        tools:src="@drawable/icon_project_plan_record_learn" />
+
+    <TextView
+        android:id="@+id/tv_project_plan_record_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_project_plan_record_item_icon"
+        android:textColor="@color/primary_font_color"
+        android:textSize="@dimen/font_l"
+        tools:text="@string/question_management" />
+
+    <TextView
+        android:id="@+id/tv_project_plan_record_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:textColor="@color/disabled3_hint_color"
+        android:textSize="@dimen/font_s"
+        tools:text="22/22" />
+
+</RelativeLayout>

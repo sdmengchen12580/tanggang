@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.edusoho.kuozhi.v3.view.RatioView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:ratio="1.5"
+    android:background="@drawable/shape_item_evaluation_blue">
+
+    <com.edusoho.kuozhi.clean.widget.ESIconView
+        android:id="@+id/icon_check_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:text="@string/check_icon_font"
+        android:gravity="center"
+        android:textSize="@dimen/xxxx_large_font_size"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_evaluation_choice_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_xs"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/tv_evaluation_choice_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_xs"
+            tools:text="（差）" />
+
+    </LinearLayout>
+
+</com.edusoho.kuozhi.v3.view.RatioView>

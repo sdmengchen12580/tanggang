@@ -1,0 +1,74 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 27
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [eventBusIndex: 'com.edusoho.kuozhi.ESEventBusIndex']
+            }
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    api project(':commonLib')
+    api project(':picker-view')
+    api project(':opencvjava')
+    implementation project(':multi-image-selector')
+    implementation 'com.gyf.barlibrary:barlibrary:2.3.0'
+    implementation 'com.edusoho.sharelibs:es-sharelibs:0.0.6-SNAPSHOT@aar'
+    implementation 'com.edusoho.eslive:eslive:0.0.5-SNAPSHOT@aar'
+    api 'com.edusoho.imserver:es-im:1.0.17-SNAPSHOT@aar'
+    implementation 'com.koushikdutta.async:androidasync:2.1.6'
+    api 'com.edusoho.videoplayer:es-videoplayer:1.5.0-SNAPSHOT@aar'
+    api 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.czt.mp3recorder:library:1.0.4'
+    implementation 'com.makeramen:roundedimageview:2.2.0'
+    implementation 'in.srain.cube:ultra-ptr:1.0.11'
+    api 'com.mcxiaoke.volley:library:1.0.15'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    api 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.umeng.analytics:analytics:6.1.4'
+    api 'com.squareup.retrofit2:retrofit:2.3.0'
+    api 'com.squareup.retrofit2:converter-gson:2.3.0'
+    api 'com.squareup.retrofit2:adapter-rxjava:2.3.0'
+    api 'com.squareup.okhttp3:logging-interceptor:3.7.0'
+    api 'io.reactivex:rxjava:1.2.1'
+    api 'io.reactivex:rxandroid:1.2.1'
+    implementation 'com.wefika:flowlayout:0.4.1'
+    implementation 'com.android.support:multidex:1.0.2'
+    api 'com.trello:rxlifecycle:1.0'
+    api 'com.trello:rxlifecycle-navi:1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    annotationProcessor 'org.greenrobot:eventbus-annotation-processor:3.0.1'
+    implementation files('libs/core-3.2.0.jar')
+    implementation files('libs/mid-sdk-3.73.jar')
+    implementation files('libs/mta-android-sdk-3.2.1.jar')
+    implementation files('libs/tbs_sdk_thirdapp_v3.5.0.jar')
+    implementation 'com.facebook.react:react-native:0.46.4'
+    implementation files('libs/libthrift-0.10.0.jar')
+    implementation files('libs/slf4j-api-1.7.24.jar')
+    implementation files('libs/track-sdk_v3.2.1.jar')
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    api 'com.android.support:appcompat-v7:27.1.1'
+    api 'com.android.support:recyclerview-v7:27.1.1'
+    api 'com.android.support:cardview-v7:27.1.1'
+    api 'com.android.support:design:27.1.1'
+    /**XTabLayout*/
+    api 'com.androidkun:XTabLayout:1.1.4'
+}

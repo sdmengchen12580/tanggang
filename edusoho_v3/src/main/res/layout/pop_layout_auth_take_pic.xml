@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_tran"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/transparent" />
+
+    <LinearLayout
+        android:id="@+id/sharell"
+        android:layout_width="match_parent"
+        android:layout_height="486dp"
+        android:background="@drawable/shape_auth_camera_pop"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="17dp"
+                android:gravity="center"
+                android:text="@string/str_people_auth"
+                android:textColor="@color/color_161616"
+                android:textSize="16dp" />
+
+
+            <ImageView
+                android:id="@+id/img_cancel"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:padding="8dp"
+                android:src="@drawable/img_graw_x" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_eeeeee" />
+
+        <ImageView
+            android:layout_width="214dp"
+            android:layout_height="214dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20.5dp"
+            android:src="@drawable/img_take_pic_people" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20.5dp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:text="温馨提示：请衣着整齐，平视屏幕，并正对光\n源进行拍摄。我们将识别您是否为考生本人。"
+            android:textColor="@color/color_999999"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_take_pic"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="21.5dp"
+            android:layout_marginTop="20.5dp"
+            android:layout_marginRight="21.5dp"
+            android:background="@drawable/shape_4_conrner_solid_0292fd"
+            android:gravity="center"
+            android:text="开始拍摄"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="11dp"
+            android:gravity="center"
+            android:text="上传的照片仅用本次匹配使用，并保证其内容的隐私安全"
+            android:textColor="@color/color_999999"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+</LinearLayout>

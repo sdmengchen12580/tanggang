@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:id="@+id/ll_item_study_course_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_top_corner_radius">
+
+        <ImageView
+            android:id="@+id/iv_study_course_set"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:src="@drawable/default_classroom"
+            android:scaleType="centerCrop"/>
+
+        <ProgressBar
+            android:id="@+id/pb_study_course_set"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:max="100"
+            android:progress="50"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/item_progress_bar"
+            android:indeterminate="false"/>
+
+        <TextView
+            android:id="@+id/tv_study_course_set_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_font_color"
+            android:textSize="@dimen/font_size_s"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            tools:text="走进自然"/>
+
+
+        <TextView
+            android:id="@+id/tv_study_course_set_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/default_grey_text_color"
+            android:textSize="@dimen/font_xs"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            tools:text="学习总时长："/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

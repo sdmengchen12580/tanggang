@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlayout_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:background="@color/primary_color">
+
+        <com.edusoho.kuozhi.v3.view.circleImageView.CircularImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/new_default_avatar" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_l"
+            tools:text="用户名" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_reward_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_s"
+                android:visibility="gone"
+                tools:text="积分：121" />
+
+            <ImageButton
+                android:id="@+id/ib_point_rule"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_reward_point"
+                android:background="@color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_point_rule"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tv_project"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/my_item_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/esiv_arrow1"
+            android:gravity="center_vertical"
+            android:text="@string/project_record"
+            android:textColor="@color/base_black_87"
+            android:textSize="@dimen/medium_font_size" />
+
+        <com.edusoho.kuozhi.v3.view.EduSohoIconView
+            android:id="@+id/esiv_arrow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/font_right_arrow"
+            android:textColor="@color/grey_cccccc"
+            android:textSize="@dimen/large_font_size" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/grey_dddddd" />
+
+    <RelativeLayout
+        android:id="@+id/tv_cache"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/my_item_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/esiv_arrow2"
+            android:gravity="center_vertical"
+            android:text="@string/cache_management"
+            android:textColor="@color/base_black_87"
+            android:textSize="@dimen/medium_font_size" />
+
+        <com.edusoho.kuozhi.v3.view.EduSohoIconView
+            android:id="@+id/esiv_arrow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/font_right_arrow"
+            android:textColor="@color/grey_cccccc"
+            android:textSize="@dimen/large_font_size" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/grey_dddddd" />
+
+    <RelativeLayout
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/my_item_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/esiv_arrow3"
+            android:gravity="center_vertical"
+            android:text="@string/question_management"
+            android:textColor="@color/base_black_87"
+            android:textSize="@dimen/medium_font_size" />
+
+        <com.edusoho.kuozhi.v3.view.EduSohoIconView
+            android:id="@+id/esiv_arrow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/font_right_arrow"
+            android:textColor="@color/grey_cccccc"
+            android:textSize="@dimen/large_font_size" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/grey_dddddd" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/grey_dddddd" />
+
+    <!--预定教室-->
+    <RelativeLayout
+        android:id="@+id/tv_per_school_home"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/my_item_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/esiv_arrow4"
+            android:gravity="center_vertical"
+            android:text="@string/per_school_home"
+            android:textColor="@color/base_black_87"
+            android:textSize="@dimen/medium_font_size" />
+
+        <com.edusoho.kuozhi.v3.view.EduSohoIconView
+            android:id="@+id/esiv_arrow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/font_right_arrow"
+            android:textColor="@color/grey_cccccc"
+            android:textSize="@dimen/large_font_size" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/grey_dddddd" />
+
+    <!--我的审批-->
+    <RelativeLayout
+        android:id="@+id/tv_my_sp"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/my_item_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/esiv_arrow5"
+            android:gravity="center_vertical"
+            android:text="@string/my_sp"
+            android:textColor="@color/base_black_87"
+            android:textSize="@dimen/medium_font_size" />
+
+        <com.edusoho.kuozhi.v3.view.EduSohoIconView
+            android:id="@+id/esiv_arrow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/font_right_arrow"
+            android:textColor="@color/grey_cccccc"
+            android:textSize="@dimen/large_font_size" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/grey_dddddd" />
+
+</LinearLayout>

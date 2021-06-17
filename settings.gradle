@@ -1,0 +1,2 @@
+include ':kuozhiv2', ':edusoho_v3', ':homework', ':picker-view', ':opencvjava'
+include ':multi-image-selector', ':commonLib'

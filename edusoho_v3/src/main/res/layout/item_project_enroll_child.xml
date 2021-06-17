@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="35dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <com.edusoho.kuozhi.clean.widget.ESIconView
+            android:id="@+id/tv_icon_item_child_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/font_s"
+            android:textColor="@color/default_grey_text_color"
+            android:text="@string/new_font_status_unfinish"/>
+
+
+        <TextView
+            android:id="@+id/tv_icon_item_child_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/primary_font_color"
+            android:textSize="@dimen/font_s"
+            android:layout_toRightOf="@+id/tv_icon_item_child_status"
+            android:layout_marginLeft="10dp"
+            tools:text="任务1：野外拓展基础知识"/>
+
+        <LinearLayout
+            android:id="@+id/ll_item_child_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_alignLeft="@+id/tv_icon_item_child_title"
+            android:layout_below="@+id/tv_icon_item_child_title">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.edusoho.kuozhi.clean.widget.ESIconView
+                    android:id="@+id/tv_item_detail_icon_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/default_grey_text_color"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/font_xs"
+                    android:text="@string/new_font_item_time"/>
+
+                <TextView
+                    android:id="@+id/tv_item_detail_title_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_item_detail_icon_time"
+                    android:layout_marginLeft="10dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/default_grey_text_color"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/font_xs"
+                    tools:text="杭州市滨江区源越大厦301会议室"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.edusoho.kuozhi.clean.widget.ESIconView
+                    android:id="@+id/tv_item_detail_icon_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/default_grey_text_color"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/font_xs"
+                    android:text="@string/new_font_item_location"/>
+
+                <TextView
+                    android:id="@+id/tv_item_detail_title_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_item_detail_icon_location"
+                    android:layout_marginLeft="10dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/default_grey_text_color"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/font_xs"
+                    tools:text="杭州市滨江区源越大厦301会议室"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

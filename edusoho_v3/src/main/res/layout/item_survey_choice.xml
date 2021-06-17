@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv_choice_stem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Q1：你喜欢《产品经理吐槽大会》这个节目吗？"
+        android:textSize="@dimen/font_s"
+        android:textColor="@color/primary_font_color"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_survey_choice_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+</LinearLayout>

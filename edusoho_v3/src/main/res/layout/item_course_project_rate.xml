@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/disabled2_hint_color"
+    android:padding="15dp">
+
+
+    <com.edusoho.kuozhi.v3.view.circleImageView.CircularImageView
+        android:id="@+id/civ_user_avatar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/default_avatar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_rate_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/civ_user_avatar"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/civ_user_avatar">
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/rb_rating"
+            android:text="曲先生"
+            android:textColor="@color/primary_font_color"
+            android:textSize="@dimen/font_s" />
+
+        <com.edusoho.kuozhi.v3.view.ReviewStarView
+            android:id="@+id/rb_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/tv_post_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_user_name"
+            android:textColor="@color/secondary_font_color"
+            android:textSize="@dimen/font_xxs" />
+
+        <TextView
+            android:id="@+id/tv_rate_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_post_time"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/primary_font_color"
+            android:textSize="@dimen/font_s" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="182dp"
+    android:id="@+id/item_layout"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="112dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="22.5dp"
+            android:layout_marginLeft="13.5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tv_state"
+            android:layout_toRightOf="@+id/img_pre_school"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="教室名称"
+            android:textColor="@color/color_161616"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_home_address"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/tv_name"
+            android:visibility="invisible"
+            android:layout_marginLeft="13.5dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/more"
+            android:layout_toRightOf="@+id/img_pre_school"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="教室位置" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/tv_home_address"
+            android:layout_marginLeft="13.5dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/more"
+            android:layout_toRightOf="@+id/img_pre_school"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="预定时间" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/img_graw_more"
+            android:text="状态"
+            android:textColor="@color/color_ff753c" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/layout_top"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:background="@color/color_eeeeee" />
+    
+    <RelativeLayout
+        android:id="@+id/rl_cancel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+        
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:text="取消"
+            android:background="@drawable/shape_15_conrner_solid_f2f2f2"
+            android:textColor="@color/color_999999"
+            android:layout_width="73dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_height="30dp" />
+        
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/layout_top"
+        android:background="@color/color_f9f9f9" />
+
+</LinearLayout>

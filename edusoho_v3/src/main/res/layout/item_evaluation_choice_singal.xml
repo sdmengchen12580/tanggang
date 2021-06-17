@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+
+    <TextView
+        android:id="@+id/tv_evaluation_meta_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/font_s"
+        android:layout_marginBottom="10dp"
+        tools:text="* 创意性"/>
+
+    <LinearLayout
+        android:id="@+id/ll_evaluation_inner_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/evaluation_list_divider"
+        android:showDividers="middle"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+</LinearLayout>

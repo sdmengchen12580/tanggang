@@ -1,0 +1,21 @@
+apply plugin: 'com.android.library'
+
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 27
+        multiDexEnabled true
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+}
+
+dependencies {
+    implementation project(':edusoho_v3')
+}

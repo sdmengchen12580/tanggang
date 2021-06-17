@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <com.edusoho.kuozhi.v3.view.circleImageView.CircularImageView
+        android:id="@+id/new_follower_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/default_avatar" />
+
+    <TextView
+        android:id="@+id/news_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/new_follower_avatar"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="80dp"
+        android:layout_toRightOf="@id/new_follower_avatar"
+        android:ellipsize="end"
+        android:singleLine="true"
+        tools:text="内容"
+        android:textColor="@color/primary_font_color"
+        android:textSize="@dimen/x_medium_font_size" />
+
+    <TextView
+        android:id="@+id/news_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="2012年12月25日"
+        android:textColor="@color/secondary_font_color"
+        android:textSize="@dimen/_x_small_font_size"
+        android:layout_alignBottom="@+id/new_follower_avatar"
+        android:layout_alignLeft="@+id/news_content"
+        android:layout_alignStart="@+id/news_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/new_follower_avatar"
+        android:layout_marginLeft="16dp"
+        android:background="@color/material_grey">
+    </View>
+
+    <Button
+        android:id="@+id/fans_relation"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:clickable="true"
+        android:background="@drawable/not_login_btn_bg"
+        android:text="@string/follow_friend"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_x_small_font_size" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/fans_relation"-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="15dp"-->
+        <!--android:clickable="true"-->
+        <!--android:scaleType="centerInside"-->
+        <!--android:src="@drawable/add_friend_selector"-->
+        <!--android:visibility="gone"/>-->
+
+</RelativeLayout>

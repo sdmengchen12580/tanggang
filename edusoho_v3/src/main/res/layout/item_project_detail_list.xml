@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.edusoho.kuozhi.clean.widget.ESIconView
+                android:id="@+id/tv_type_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/new_font_type_course"
+                android:textColor="@color/assignment_exam_grey"
+                android:textSize="@dimen/font_l" />
+
+            <TextView
+                android:id="@+id/tv_project_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_type_icon"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_type_icon"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/primary_font_color"
+                android:textSize="@dimen/font_s"
+                tools:text="野外拓展理论知识讲解" />
+
+            <TextView
+                android:id="@+id/tv_project_item_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/assignment_exam_blue"
+                android:textSize="@dimen/font_xs"
+                tools:text="继续学习" />
+
+            <TextView
+                android:id="@+id/tv_project_item_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_project_item_title"
+                android:layout_alignStart="@+id/tv_project_item_title"
+                android:layout_below="@+id/tv_project_item_title"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/assignment_exam_grey"
+                android:textSize="@dimen/font_xs"
+                tools:text="课程讲师：再用你的名字" />
+
+            <RelativeLayout
+                android:id="@+id/rl_sub_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_project_item_title"
+                android:layout_alignStart="@+id/tv_project_item_title"
+                android:layout_below="@+id/tv_project_item_teacher"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_project_item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/assignment_exam_grey"
+                    android:textSize="@dimen/font_xs"
+                    tools:text="计划时间：09-09 至 09-30" />
+
+                <TextView
+                    android:id="@+id/tv_project_item_exam_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_project_item_time"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_project_item_time"
+                    android:background="@drawable/shape_assignment_exam_red"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp"
+                    android:textColor="@color/assignment_exam_red"
+                    android:textSize="@dimen/font_xxs"
+                    android:visibility="visible"
+                    tools:text="1次" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_item_detail_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rl_sub_title"
+                android:layout_below="@+id/rl_sub_title"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/my_sch_bg_noraml_gradient" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_item_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/disabled2_hint_color">
+
+        <RelativeLayout
+            android:id="@+id/rlayout_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:background="@color/primary_color"
+            app:layout_scrollFlags="scroll">
+
+            <com.edusoho.kuozhi.v3.view.circleImageView.CircularImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/new_default_avatar" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_avatar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="19dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_l"
+                tools:text="用户名" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_reward_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_s"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    tools:text="积分：121" />
+
+                <ImageButton
+                    android:id="@+id/ib_point_rule"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@color/transparent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_reward_point"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerInside"
+                    android:visibility="gone"
+                    android:src="@drawable/icon_point_rule" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tl_titles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/disabled2_hint_color"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/primary_color"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/secondary_font_color"
+            app:tabTextColor="@color/secondary_font_color" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

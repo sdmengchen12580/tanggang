@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+
+    <com.edusoho.kuozhi.v3.view.circleImageView.CircularImageView
+        android:id="@+id/iv_member_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/new_default_avatar"
+        android:layout_alignParentLeft="true"/>
+
+
+    <TextView
+        android:id="@+id/tv_member_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/font_s"
+        android:layout_toRightOf="@+id/iv_member_avatar"
+        android:layout_alignTop="@+id/iv_member_avatar"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        tools:text="xixihaha"
+        android:textColor="@color/primary_font_color" />
+
+    <TextView
+        android:id="@+id/tv_member_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/font_xs"
+        android:layout_toRightOf="@+id/iv_member_avatar"
+        android:layout_alignBottom="@+id/iv_member_avatar"
+        android:layout_alignLeft="@+id/tv_member_name"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/default_grey_text_color"
+        tools:text="hahahaha"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_member_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:background="@drawable/shape_button_blue_radius">
+
+        <ImageView
+            android:id="@+id/iv_member_follow"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/icon_activity_members_add"/>
+
+
+        <TextView
+            android:id="@+id/tv_member_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            tools:text="已关注"
+            android:textSize="@dimen/font_s"
+            android:textColor="@color/primary"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

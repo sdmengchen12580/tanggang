@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:contentInsetStart="0dp"
+        android:background="@color/primary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.edusoho.kuozhi.clean.widget.ESIconView
+                android:id="@+id/iv_back"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/new_font_back"
+                android:textColor="@color/disabled2_hint_color"
+                android:textSize="@dimen/font_l" />
+
+            <TextView
+                android:id="@+id/tv_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:text="@string/survey_detail"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_xl" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.edusoho.kuozhi.clean.widget.ESRecyclerView.ESPullAndLoadRecyclerView
+        android:id="@+id/rv_survey_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tb_toolbar"
+        android:layout_above="@+id/btn_get_survey_result">
+
+    </com.edusoho.kuozhi.clean.widget.ESRecyclerView.ESPullAndLoadRecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/rl_success_tip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/survey_submit_success"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已成功提交"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/assignment_exam_green"
+                android:textSize="@dimen/font_s" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_get_survey_result"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/primary"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_l"
+        android:text="查看结果"
+        android:layout_height="50dp" />
+
+</RelativeLayout>

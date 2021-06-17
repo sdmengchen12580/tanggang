@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/catalog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="36dp"
+            tools:text="A"
+            android:textSize="@dimen/_x_small_font_size"
+            android:textColor="@color/secondary_font_color" />
+
+        <View
+            android:id="@+id/divider_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="35dp"
+            android:layout_toRightOf="@id/catalog"
+            android:layout_centerVertical="true"
+            android:background="@color/background" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/friend_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <com.edusoho.kuozhi.v3.view.circleImageView.CircularImageView
+            android:id="@+id/friend_avatar"
+            android:layout_width="@dimen/common_50"
+            android:layout_height="@dimen/common_50"
+            android:layout_marginLeft="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_avatar" />
+
+        <TextView
+            android:id="@+id/friend_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/primary_font_color"
+            android:textSize="@dimen/_x_small_font_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

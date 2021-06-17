@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/disabled2_hint_color">
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/disabled1_hint_color"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_normal_course"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/filter_type_course"
+            android:textColor="@color/my_study_radio_button_sel"
+            android:textSize="@dimen/font_l" />
+
+        <RadioButton
+            android:id="@+id/rb_live_course"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/filter_type_live"
+            android:textColor="@color/my_study_radio_button_sel"
+            android:textSize="@dimen/font_l" />
+
+        <RadioButton
+            android:id="@+id/rb_classroom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/filter_type_classroom"
+            android:textColor="@color/my_study_radio_button_sel"
+            android:textSize="@dimen/font_l" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/rg"
+        android:background="@color/disabled_hint_color" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

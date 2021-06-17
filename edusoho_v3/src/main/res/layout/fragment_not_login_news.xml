@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <ImageView
+            android:id="@+id/iv_not_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/not_login"/>
+
+        <TextView
+            android:id="@+id/tv_not_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_not_login"
+            android:textColor="@color/grey_hint"
+            android:text="@string/not_login_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/_x_small_font_size"/>
+
+        <Button
+            android:id="@+id/btn_not_login"
+            android:layout_width="230dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/tv_not_login"
+            android:background="@drawable/not_login_btn_bg"
+            android:text="@string/not_login_button"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x_medium_font_size" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hw_question_analysis_bg"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/hw_question_right_anwer_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="9dp"
+        android:text="@string/right_answer"
+        android:textSize="@dimen/font_m" />
+
+    <TextView
+        android:id="@+id/hw_question_right_anwer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="9dp"
+        android:text="正确答案:"
+        android:textSize="@dimen/base_size" />
+
+    <TextView
+        android:id="@+id/hw_question_teachersay_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="9dp"
+        android:text="@string/teacher_comment"
+        android:textSize="@dimen/base_size" />
+
+    <TextView
+        android:id="@+id/hw_question_teachersay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="9dp"
+        android:textSize="@dimen/font_m" />
+
+    <TextView
+        android:id="@+id/hw_question_analysis_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="9dp"
+        android:text="@string/homework_analysis"
+        android:textSize="@dimen/font_m" />
+
+    <TextView
+        android:id="@+id/hw_question_analysis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="9dp"
+        android:textSize="@dimen/base_size" />
+
+</LinearLayout>

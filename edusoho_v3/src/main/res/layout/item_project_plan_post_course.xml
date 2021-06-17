@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_course_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary_font_color"
+        android:textSize="@dimen/font_l"
+        tools:text="户外运动理论课程" />
+
+
+    <TextView
+        android:id="@+id/tv_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/project_plan_time"
+        android:textColor="@color/secondary_font_color"
+        android:textSize="@dimen/font_xs"
+        tools:text="课程讲师：" />
+
+    <TextView
+        android:id="@+id/tv_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/project_plan_time"
+        android:textColor="@color/secondary_font_color"
+        android:textSize="@dimen/font_xs"
+        tools:text="学习时长:" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/project_plan_progress"
+            android:textColor="@color/secondary_font_color"
+            android:textSize="@dimen/font_xs" />
+
+        <com.edusoho.kuozhi.clean.widget.ESProgressBar
+            android:id="@+id/espb_project_plan_progress"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/tv_progress_num"
+            android:layout_toRightOf="@+id/tv_progress"
+            android:max="100"
+            android:progress="80"
+            android:progressDrawable="@drawable/bg_course_progress"
+            app:percent_size="@dimen/font_xxs"
+            app:text_visible="false" />
+
+        <TextView
+            android:id="@+id/tv_progress_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="100%"
+            android:textColor="@color/primary_disabled_color"
+            android:textSize="@dimen/font_xs"
+            tools:text="100%" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/disabled0_hint_color"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:id="@+id/card_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="4dp"
+        android:layout_toLeftOf="@+id/llayout_more"
+        android:text="推荐课程"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_size_m" />
+
+    <LinearLayout
+        android:id="@+id/llayout_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp">
+
+        <com.edusoho.kuozhi.clean.widget.ESIconView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="@string/font_right_arrow"
+            android:textColor="@color/primary_font_color"
+            android:textSize="@dimen/font_l" />
+    </LinearLayout>
+
+
+</RelativeLayout>
