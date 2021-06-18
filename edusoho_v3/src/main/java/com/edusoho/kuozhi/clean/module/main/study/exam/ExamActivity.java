@@ -515,7 +515,7 @@ public class ExamActivity extends BaseFinishActivity<ExamContract.Presenter> imp
                     HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor(new HttpLoggingInterceptor.Logger() {
                         @Override
                         public void log(String message) {
-                            Log.e("日志拦截器: ", message);
+                            Log.e("日志拦截:", message);
                         }
                     });
                     loggingInterceptor.setLevel(level);
@@ -526,6 +526,8 @@ public class ExamActivity extends BaseFinishActivity<ExamContract.Presenter> imp
                             .addInterceptor(loggingInterceptor)
                             .build();
                     //参数传递
+//                    APPKey：eb792643147d3026489ce6c9e5384332
+//                    AppSecret：8ec2c669d077538ffb39f0a6fc70ec48
                     FormBody.Builder builder = new FormBody.Builder();
                     builder.add("img1Base64", oldBase64);
                     builder.add("img2Base64", base64);
